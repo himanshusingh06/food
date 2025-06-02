@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Bites Check -Login
+{% endblock %}
+{% block styles %}
+<div class="max-w-xl mx-auto mt-10 bg-yellow-100 p-6 border border-yellow-300 rounded">
+    <h2 class="text-xl font-bold text-yellow-800 mb-2">Please Wait</h2>
+    <p class="text-yellow-700">You can log your meals again after <strong>{{ wait_time }}</strong>.</p>
+    <a href="{% url 'meal_list' %}" class="mt-4 inline-block text-blue-600 hover:underline">Go back</a>
+</div>
+{% end block %}
